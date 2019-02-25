@@ -1,0 +1,56 @@
+{
+    "name": "example",
+    "revision": "01D4JN0R51BM9YV724MP7YMMTM",
+    "created": "2019-02-25T17:40:17.026974+02:00",
+    "modified": "2019-02-25T17:40:18.465759+02:00",
+    "bundle": {
+        "name": "helloworld",
+        "version": "0.1.3",
+        "description": "A short description of your bundle",
+        "keywords": [
+            "helloworld",
+            "cnab",
+            "tutorial"
+        ],
+        "maintainers": [
+            {
+                "name": "John Doe",
+                "email": "john.doe@example.com",
+                "url": "https://example.com"
+            },
+            {
+                "name": "Jane Doe",
+                "email": "jane.doe@example.com",
+                "url": "https://example.com"
+            }
+        ],
+        "invocationImages": [
+            {
+                "imageType": "docker",
+                "image": "deislabs/helloworld-cnab:2aa903328e18e41014b0c98c43582169639defa2"
+            }
+        ],
+        "images": [
+            {
+                "imageType": "",
+                "image": "",
+                "description": "alpine",
+                "refs": [
+                    {
+                        "path": "cnab/app/charts/alpine/values.yaml",
+                        "field": "image.repository"
+                    }
+                ]
+            }
+        ],
+        "parameters": null,
+        "credentials": null
+    },
+    "result": {
+        "message": "",
+        "action": "install",
+        "status": "success"
+    },
+    "parameters": {},
+    "files": null
+}
